@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Change bg color</title>
+	</head>
+	<body>
+
+		<div id="turnPurple" style="height:150px; width:150px; border: solid thin black; margin: 10px; float: left;">Click Me I'll turn purple
+		</div>
+		<div id="clearPurple" style="height:150px; width:150px; border: solid thin black; margin: 10px; float: left;">Click Me to clear purple
+		</div>
+		
+		<script>
+		document.getElementById( "turnPurple" ).addEventListener( "click", function() {
+				document.getElementById( "turnPurple" ).style.backgroundColor = "purple";
+		});
+		document.getElementById( "clearPurple" ).addEventListener( "click", function() {
+				document.getElementById( "turnPurple" ).style.backgroundColor = "white";
+		});
+		</script>
+	</body>
+</html>

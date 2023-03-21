@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+		<script>
+		var MessageArray = [];
+		MessageArray[1] = "You are over link 1";
+		MessageArray[2] = "This is link 2";
+		MessageArray[3] = "And now... link 3";
+		MessageArray[4] = "mouseover detected on link 4";
+		var currentMessage = -1;
+		function showMessage( n ) {
+		   if (n != currentMessage) {
+			  document.myForm.message.value = MessageArray[n];
+			  currentMessage = n;
+		   }
+		}
+		</script>
+</head>
+
+		<body>
+		<form name="myForm">
+		<a href="#" onmouseover="showMessage(1)";>Link 1</a> | 
+		<a href="#" onmouseover="showMessage(2)";>Link 2</a> | 
+		<a href="#" onmouseover="showMessage(3)";>Link 3</a> | 
+		<a href="#" onmouseover="showMessage(4)";>Link 4</a>
+		<input type="text" name="message" size="40" />
+		</form>
+		</body>
+</html>

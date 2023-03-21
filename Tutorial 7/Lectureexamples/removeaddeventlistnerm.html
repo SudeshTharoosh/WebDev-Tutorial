@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Change bg color</title>
+	</head>
+	<body>
+		<div id="turnPurple2" style="height:150px; width:150px; border: solid thin black; margin: 10px; float: left;">Click Me I'll turn purple
+		</div>
+		<div id="clearPurple2" style="height:150px; width:150px; border: solid thin black; margin: 10px; float: left;">Click Me to clear purple
+		</div>
+		<script>
+			function turnPurpleDivTextPink() {
+				document.getElementById( "turnPurple2" ).style.color = "pink";
+			}
+
+			function turnPurpleDivPurple() {
+				document.getElementById( "turnPurple2" ).style.backgroundColor = "purple";
+			}
+
+			function stopTurningPurpleDivPurple() {
+				document.getElementById( "turnPurple2" ).style.backgroundColor = "white";
+				document.getElementById( "turnPurple2" ).style.color = "black";
+				document.getElementById( "turnPurple2" ).innerHTML = "I can no longer turn purple";
+				document.getElementById( "turnPurple2" ).removeEventListener( "click", turnPurpleDivPurple );
+			}
+
+			document.getElementById( "turnPurple2" ).addEventListener( "click", turnPurpleDivPurple );
+			document.getElementById( "turnPurple2" ).addEventListener( "click", turnPurpleDivTextPink );
+			document.getElementById( "clearPurple2" ).addEventListener( "click", stopTurningPurpleDivPurple);
+			</script>
+	</body>
+</html>
