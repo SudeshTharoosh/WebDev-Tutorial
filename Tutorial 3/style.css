@@ -1,0 +1,55 @@
+dt {
+	font-family: verdana;
+	font-size: 25px;
+}
+
+dd {
+	font-family: Lucida Console;
+	font-size: 20px;
+}
+
+h2 {
+	font-family: Georgia;
+	font-size: 30px;
+}
+
+ul {
+	list-style-type: none;
+	overflow: hidden;
+	background-color: #263238;
+}
+
+li {
+	float: left;
+	margin-left: 30px;
+	font-size: 150%;
+	color: white;
+}
+
+body {
+	background-color: #00796b;
+}
+
+p {
+	font-size: 25px;
+}
+
+.main {
+  margin-top: 75px;
+  height: 1000px; /* Used in this example to enable scrolling */
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #263238;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+h1{
+	color:black;
+	font-size:30;
+	font-family:times;
+	padding-top:40;
+}
