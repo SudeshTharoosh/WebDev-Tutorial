@@ -1,0 +1,62 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5em;
+    background-color: #B5E2FA;
+}
+
+h1{
+    font-family: 'Gajraj One', cursive;
+    font-size: 1.75em;
+}
+
+#q_title{
+    font-family: 'Gajraj One', cursive;
+    font-weight: lighter;
+}
+
+#score{
+    font-family: 'Comfortaa', cursive;
+    color: #457b9d;
+}
+
+#question1{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+}
+
+#answer{
+    font-size: 1em;
+}
+
+.control{
+    font-size: 1em;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+#note{
+    font-weight: bold;
+    color: red;
+}
+
+#q_comment{
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+}
+
+#square{
+    background-color: #00241B;
+    height: 20em;
+    width: 40em;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 83%;
+    text-align: center;
+}
+
+
+
+#summary{
+    font-family: 'Comfortaa', cursive;
+    font-weight: bold;
+}

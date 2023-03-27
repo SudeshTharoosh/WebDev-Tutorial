@@ -1,0 +1,144 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Comfortaa:wght@700&family=Gajraj+One&family=Gothic+A1:wght@800&family=Montserrat:wght@400;600&family=Phudu:wght@600&family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        body{
+            font-size: larger;
+            font-weight: bold;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        #score-container{
+            padding: 20px;
+            border: 2px solid;
+            width: "100px"
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Simple Math quiz</h1>
+    <p>
+        <strong>Question 1</strong>:
+        <span id="quesion1"></span>
+        <span id="answer1"></span>
+        <span id="feedback1"></span>
+    </p>
+
+    <p>
+        <strong>Question
+            </strong>:
+        <span id="quesion2"></span>
+        <span id="answer2"></span>
+        <span id="feedback2"></span>
+    </p>
+
+    <p>
+        <strong>Question 3</strong>:
+        <span id="quesion3"></span>
+        <span id="answer3"></span>
+        <span id="feedback3"></span>
+    </p>
+
+    <p>
+        <strong>Question 4</strong>:
+        <span id="quesion4"></span>
+        <span id="answer4"></span>
+        <span id="feedback4"></span>
+    </p>
+
+    <p>
+        <strong>Question 5</strong>:
+        <span id="quesion5"></span>
+        <span id="answer5"></span>
+        <span id="feedback5"></span>
+    </p>
+    
+    <p>
+        <strong>Question 6</strong>:
+        <span id="quesion6"></span>
+        <span id="answer6"></span>
+        <span id="feedback6"></span>
+    </p>
+
+    <p>
+        <strong>Question 7</strong>:
+        <span id="quesion7"></span>
+        <span id="answer7"></span>
+        <span id="feedback7"></span>
+    </p>
+
+    <p>
+        <strong>Question 8</strong>:
+        <span id="quesion8"></span>
+        <span id="answer8"></span>
+        <span id="feedback8"></span>
+    </p>
+
+    <p>
+        <strong>Question 9</strong>:
+        <span id="quesion9"></span>
+        <span id="answer9"></span>
+        <span id="feedback9"></span>
+    </p>
+
+    <p>
+        <strong>Question 10</strong>:
+        <span id="quesion10"></span>
+        <span id="answer10"></span>
+        <span id="feedback10"></span>
+    </p>
+
+    <div id="score-container">
+        <p id="score"></p>
+    </div>
+    <script>
+        function get_user_input(number1, number2){
+            var answer = prompt("Enter the answer for the following question "+ number1 + " + " + number2);
+            return answer;
+        }
+
+        function validate_answer(correct_answer, user_answer){
+            return correct_answer == user_answer ? true : false;
+        }
+
+        function generate_question(){
+            let ans_array = [];
+            let score = 0;
+            for(let i = 1; i < 11; i++){
+                let num1 = Math.ceil(Math.random() * 10);
+                let num2 = Math.ceil(Math.random() * 10);
+                let ans = get_user_input(num1, num2);
+                let isCorrect = validate_answer((num1 + num2), ans);
+
+                if(isCorrect){
+                    document.getElementById("feedback" + i).style.color = "green";
+                    document.getElementById("feedback" + i).innerHTML = "&checkmark; Your answer is correct";
+                    score++;
+                } else {
+                    document.getElementById("feedback" + i).style.color = "red";
+                    document.getElementById("feedback" + i).innerHTML = `&cross; Your answer is incorrect. The answer was ${num1 + num2}`;
+                }
+                
+                document.getElementById("quesion" + i).innerHTML = `${num1} + ${num2} = ?`;
+                document.getElementById("answer" + i).innerHTML = `${num1 + num2}`;
+                document.getElementById("score").innerHTML = `Score: ${(score/10)*100}%`;
+            }
+
+            if(score <= 2) {
+                    document.querySelector("body").style.backgroundColor = "#FF7F7F";
+            } else {
+                document.querySelector("body").style.backgroundColor = "#84dcc6";
+            }
+        }
+
+        generate_question();
+        
+
+    </script>
+</body>
+</html>
