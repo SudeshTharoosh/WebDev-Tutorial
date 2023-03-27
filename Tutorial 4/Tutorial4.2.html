@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>Tutorial</title>
+		<link rel="stylesheet" href="style2.css">
+	</head>
+	
+	<body>
+		<h1>University Registration</h1>
+		<form>
+			<fieldset>
+				<legend>Your Details</legend>
+				<div id="main">
+					
+					<div id="info">
+					<label for="fname">First Name:</label>
+					<input type="text" id="fname" name="fname" placeholder="Enter your first name"><br><br>
+					
+					<label for="sname">Surname:</label>
+					<input type="text" id="sname" name="sname" placeholder="Enter your surname"><br><br>
+					
+					<label for="email">Email Address:<label>
+					<input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
+					
+					<label for="password">Password:<label>
+					<input type="password" id="password" name="password"><br><br>
+					</div>
+					
+					<p>Level:<p>
+					<label for="undergraduate">Undergraduate</label>
+					<input type="radio" id="undergraduate" name="undergraduate"><br>
+					
+					<label for="postgraduate">Postgraduate</label>
+					<input type="radio" id="postgraduate" name="postgraduate"><br><br>
+					
+					<label for="comments">Any comments:</label><br>
+					<textarea rows="7" cols="70">Write your comment here....</textarea><br><br>
+					
+					<label for="course">Course:</label>
+					<select name="course">
+						<option value="1">CS</option>
+						<option value="2">SE</option>
+						<option value="3">AIDS</option>
+						<option value="4">BIS</option>
+						<option value="5">BS</option>
+					</select><br>
+					
+					<label>Terms and conditions</label>
+					<input type="checkbox">
+				</div>	
+				
+				<footer>
+					<input type="submit" value="Submit">
+					<input type="reset" value="Reset">
+				</footer>
+			</fieldset>
+		</form>
+	</body>
+</html>
