@@ -1,0 +1,73 @@
+body{
+    background-color: #666666;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    text-align: center;
+    font-family: Papyrus, fantasy;
+    padding: 20px;
+}
+
+#content{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin: auto;
+    width: fit-content;
+    height: fit-content;
+}
+
+form{
+    background-color: #cccccc;
+    padding: 2%;
+    width: fit-content;
+    margin: auto;
+    margin-top: 2%;
+    font-weight: bold;
+}
+
+form button{
+    margin-left: 20px;
+}
+
+
+#order-container{
+    background-color: #cccccc;
+    text-align: center;
+    /* padding-top: 15%; */
+    width: fit-content;
+    margin: 0 10px 0 10px;
+    padding: 0 3% 5% 3%
+}
+
+#order-tag{
+    font-weight: bold;
+    font-size: larger;
+    padding:  5% 0 10% 0;
+}
+
+.image_container{
+    height: fit-content;
+    width: 250px;
+    margin: 0 10px 0 10px;
+    background-color: white;
+    text-align: center;
+    margin-top: auto;
+}
+
+.image_container h3{
+    padding: 3%;
+}
+
+.ordered_prod{
+    padding-bottom: 1%;
+}
+
+.ordered_prod img ,.ordered_prod h3{
+    visibility: hidden;
+}
+
+.images{
+    width: 100%;
+
+}

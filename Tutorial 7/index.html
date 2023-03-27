@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="flowers.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Valentine flowers</h1>
+    <div id="content">
+        <div class="image_container">
+            <img id="white_pic" class="images" src="Images/white.jpeg" alt="White Bouquet">
+            <h3 id="white_name">White Bouquet</h3><br>
+            <h3 id="white_price">&#163; 24</h3>
+        </div>
+        <div class="image_container">
+            <img id="pink_pic" class="images" src="Images/pink.jpeg" alt="White Bouquet">
+            <h3 id="pink_name">Pink Bouquet</h3><br>
+            <h3 id="pink_price">&#163; 24</h3>
+        </div>
+        <div class="image_container" >
+            <img id="red_pic" class="images" src="Images/red.jpeg" alt="White Bouquet">
+            <h3 id="red_name">Red Bouquet</h3><br>
+            <h3 id="red_price">&#163; 24</h3>
+        </div>
+        <div id="order-container">
+            <p id="order-tag">Your order: </p> <br>
+        <div class="image_container ordered_prod">
+            <img class="images" id="order_image" src="Images/white-gift.jpeg" alt="White Bouquet">
+            <h3 id="order_name">White Bouquet</h3><br>
+            <h3 id="order_price">&#163; 24</h3>
+        </div>
+        </div>
+    </div>
+    <form id="form">
+        <label for="options">Bouquet Options: </label>
+        <select id="options" name="type">
+            <option value=”” disabled selected style="display: none;">Normal</option>
+            <option value="wChampagne">with Champagne</option>
+            <option value="extra">Extra</option>
+            <option value="extraWChamp">Extra with Champagne</option>
+        </select>
+        <label>&nbsp; Bouquet Colour : </label>
+        <input type="radio" name="colour" id="White" value="white">
+        <label for="White">White</label>
+        <input type="radio" name="colour" id="Pink" value="pink">
+        <label for="Pink">Pink</label>
+        <input type="radio" name="colour" id="Red" value="red">
+        <label for="Red">Red</label>
+        <button id="clear" type="button">Clear your order</button>
+        <button id="place" type="button">Place your order</button>
+    </form>
+</body>
+</html>
