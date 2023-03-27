@@ -1,0 +1,141 @@
+<!doctype html>
+
+<html lang="eng">
+	<head>
+		<title>Tutorial 2</title>
+		<meta charset="UTF-8">
+		<style>	
+			h1, h2{
+				text-align : center;
+			}
+			
+			table, td, th {
+				border: 2px blue solid;
+				padding : 3px;
+			}
+			
+			tr:first-child { 
+				color:none;
+			}
+			
+			table {
+				padding : 0px;
+				margin : auto;
+				background-color : white;
+			}
+			
+			td {
+				margin : 0;
+			}
+			
+			.days-and-time {
+				font-weight : bold;
+				text-align : center;
+			}
+					
+			.lane-swim{
+				background-color : #add8e6;
+			}
+			
+			.swim-fit {
+				background-color : #e0ffff;
+			}
+			
+			.public-swim {
+				background-color : #f0fff0;
+			}
+			
+			.parents-and-tots {
+				background-color : #ffffe0;
+			}
+			
+			.club {
+				background-color : #afc3dd;
+			}
+			
+			li {
+				list-style : square;
+			}
+			
+			
+		</style>
+	</head>
+	<body style="background-image : url('swimming-pool-2.jpg'); background-attachment : fixed; background-size : cover;">
+		<h1>Tutorial 2 - Pool Schedule</h1>
+		<h2>Sathindu Perera</h2>
+		
+		<table>
+			<tr>
+				<td colspan='6'>
+				Prices:
+				<div>
+					<ul>
+						<li>Free - Infants (0-3)</li>
+						<li>&#163<span>3</span> - Child (4-12)</li>
+						<li>&#163<span>4</span> - Youth (13-17)</li>
+						<li>&#163<span>5</span> - Adult</li>
+					<ul>
+				</div>
+				</td>
+			</tr>
+			<tr>
+				<th></th>
+				<th class='days-and-time'>7:00 - 8:00</th>
+				<th class='days-and-time'>8:00 - 9:00</th>
+				<th class='days-and-time'>9:00 - 11:00</th>
+				<th class='days-and-time'>11:00 - 5:00</th>
+				<th class='days-and-time'>5:00 - 7:00</th>
+			</tr>
+			<tr>
+				<td class='days-and-time'>Monday</td>
+				<td class="swim-fit">SwimFit</td>
+				<td colspan='2' class="lane-swim">Lane Swim</td>
+				<td rowspan='7' class="public-swim">Public Swim</td>
+				<td class="club">Adult Swim Club</td>
+			</tr>
+			<tr>
+				<td class='days-and-time'>Tuesday</td>
+				<td colspan='2'class="lane-swim">Lane Swim</td>
+				<td class="parents-and-tots">Parents and Tots</td>
+				<td class="club">Junior Swim Club</td>
+			</tr>
+						
+			<tr>
+				<td class='days-and-time'>Wednesday</td>
+				<td class="swim-fit">SwimFit</td>
+				<td colspan='2' class="lane-swim">Lane Swim</td>
+				<td class="club">Adult Swim Club</td>
+			</tr>
+			
+			<tr>
+				<td class='days-and-time'>Thursday</td>
+				<td colspan='2' class="lane-swim">Lane Swim</td>
+				<td class="parents-and-tots">Parents and Tots</td>
+				<td class="club">Junior Swim Club</td>
+			</tr>
+			
+			<tr>
+				<td class='days-and-time'>Friday</td>
+				<td class="swim-fit">SwimFit</td>
+				<td colspan='2'class="lane-swim">Lane Swim</td>
+				<td rowspan='3'>Closed</td>
+			</tr>
+			
+			<tr>
+				<td class='days-and-time'>Saturday</td>
+				<td colspan='3' class="public-swim">Public Swim</td>
+			</tr>
+			
+			<tr>
+				<td class='days-and-time'>Sunday</td>
+				<td colspan='3' class="public-swim">Public Swim</td>
+			</tr>
+		</table>
+		
+		<hr>
+		
+	</body>
+</html>
+
+<!--first-of-type targets the first occurence of the specified element
+	first-child targets the first child of a element that is of the specified element-->
